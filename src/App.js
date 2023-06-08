@@ -15,7 +15,6 @@ import {
 
 import {
   Navbar,
-  Sidebar
 } from './components/index';
 
 
@@ -24,7 +23,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Sidebar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />

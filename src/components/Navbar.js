@@ -19,9 +19,11 @@ const Navbar = () => {
           <img className="logo-navbar" src={logo} alt="Andrea Rivas"></img>
         </Link>
       </div>
-      <div className='phone-container'>
-        call me
-      </div>
+      <p className='phone-container'>
+        say
+        {''}
+        <span className='say-hello'> hello</span>
+      </p>
     </nav>
   )
 }

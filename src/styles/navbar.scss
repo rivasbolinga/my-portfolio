@@ -16,3 +16,19 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.say-hello {
+  font-family: $secondary-font-badScript;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: $primary-color-black;
+  cursor: pointer;
+}
+
+.phone-container {
+  height: 50px;
+}
+
+.phone-container:hover {
+  border-bottom: 2px solid $primary-color-black;
+}
