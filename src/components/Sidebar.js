@@ -1,9 +1,9 @@
-import {links} from '../utils/data';
-import {Link} from 'react-router-dom';
-import logo from '../assets/logo.png';
-import '../styles/navbar.scss';
+import { links } from '../utils/data'
+import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
+import '../styles/navbar.scss'
 
-const Navbar = () => {
+const Sidebar = () => {
   return (
     <nav className="navbar">
       <ul className="nav-links">
@@ -31,4 +31,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default Sidebar

@@ -14,7 +14,7 @@
 .nav-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .say-hello {
@@ -24,11 +24,45 @@
   color: $primary-color-black;
   cursor: pointer;
 }
-
 .phone-container {
-  height: 50px;
+  position: relative;
+  display: inline-block;
+  /* Other styles for the container */
 }
 
-.phone-container:hover {
-  border-bottom: 2px solid $primary-color-black;
+.border-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Replace with desired border color */
+  animation: border-appear 0.5s forwards; /* Adjust the animation duration as needed */
+  transform-origin: left;
+}
+
+@keyframes border-appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.phone-container:hover .border-animation {
+  animation-play-state: running;
+}
+
+.phone-container .border-animation {
+  animation: border-disappear 0.5s forwards;
+}
+
+@keyframes border-disappear {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
