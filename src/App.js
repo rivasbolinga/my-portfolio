@@ -1,11 +1,16 @@
 
 import './App.css';
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Link } from 'react-router-dom';
+import { 
+  createBrowserRouter, 
+  RouterProvider, 
+  createRoutesFromElements, 
+  Route, 
+  Link, } from 'react-router-dom';
 import {
   HomePage,
   AboutPage,
   ContactPage,
-  WorksPage
+  WorksPage,
 } from './pages/index'
 
 
@@ -14,15 +19,15 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route index element={<HomePage />} />
-        <Route element={<ContactPage />} />
-        <Route element={<AboutPage />} />
-        <Route element={<WorksPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/works" element={<WorksPage />} />
       </Route>
     )
   )
   return (
     <div className="App">
-      hi
+      <RouterProvider router={router} />
     </div>
   );
 }
