@@ -1,3 +1,18 @@
+@import './common.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
 .logo-navbar {
   width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

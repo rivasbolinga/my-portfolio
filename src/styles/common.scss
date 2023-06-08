@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Grandiflora+One&family=Playfair:wght@300&family=Saira+Condensed&display=swap');
+
+$primary-font:'Playfair'; 
+$primary-color-grey: #555555;
+$primary-color-black: #1C1C1C;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: $primary-font;
+  color: $primary-color-grey;
+  text-transform: capitalize;
+}
+
