@@ -1,7 +1,7 @@
 
 import './App.css';
 import { 
-  createBrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
  } from 'react-router-dom';
@@ -11,14 +11,18 @@ import {
   ContactPage,
   WorksPage,
   ErrorPage
-} from './pages/index'
+} from './pages/index';
+
+import {
+  Navbar,
+  Sidebar
+} from './components/index';
 
 
 const App = () => {
-  const BrowserRouter = createBrowserRouter();
 
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <Sidebar />
       <Routes>
@@ -28,7 +32,7 @@ const App = () => {
         <Route path="/works" element={<WorksPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </BrowserRouter>)
+    </Router>)
 }
 
 export default App;
