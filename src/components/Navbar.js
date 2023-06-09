@@ -2,10 +2,19 @@ import {links} from '../utils/data';
 import {Link} from 'react-router-dom';
 import logo from '../assets/logo.png';
 import '../styles/navbar.scss';
+import { RxHamburgerMenu} from 'react-icons/rx';
+import { useNavigationContext } from '../context/navbar_context';
+
 
 const Navbar = () => {
+
+  const {openSidebar} = useNavigationContext();
+
   return (
     <nav className="navbar">
+      <button className='hamburger-btn' type="button">
+        <RxHamburgerMenu onClick={openSidebar} />
+      </button>
       <ul className="nav-links">
         {links.map((link) => {
           const { id, text, url } = link
@@ -25,7 +34,6 @@ const Navbar = () => {
         say
         {''}
         <span className="say-hello"> hello</span>
-        <div class="border-animation"></div>
       </p>
     </nav>
   )

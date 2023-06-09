@@ -1,34 +1,40 @@
-import { links } from '../utils/data'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import logo from '../assets/logo.png'
-import '../styles/navbar.scss'
+import { Link } from 'react-router-dom';
+import { useNavigationContext } from '../context/navbar_context';
+import { FaTimes } from 'react-icons/fa';
+import { links } from '../utils/data';
+
 
 const Sidebar = () => {
+  const { isSidebarOpen, closeSidebar } = useNavigationContext()
+
   return (
-    <nav className="navbar">
-      <ul className="nav-links">
-        {links.map((link) => {
-          const { id, text, url } = link
-          return (
-            <li key={id}>
-              <Link to={url}>{text}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      <div className="logo-container">
-        <Link to="/">
-          <img className="logo-navbar" src={logo} alt="Andrea Rivas"></img>
-        </Link>
-      </div>
-      <p className="phone-container">
-        say
-        {''}
-        <span className="say-hello"> hello</span>
-        <div class="border-animation"></div>
-      </p>
-    </nav>
+
+      <aside
+        className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
+      >
+        <div className="sidebar-header">
+          <img src={logo} className="logo" alt="coding addict" />
+          <button className="close-btn" onClick={closeSidebar}>
+            <FaTimes />
+          </button>
+        </div>
+        <ul className="links">
+          {links.map(({ id, text, url }) => {
+            return (
+              <li key={id}>
+                <Link to={url} onClick={closeSidebar}>
+                  {text}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </aside>
+
   )
 }
+
 
 export default Sidebar

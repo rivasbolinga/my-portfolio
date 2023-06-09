@@ -1,0 +1,9 @@
+@import './common.scss';
+
+.sidebar {
+  display: none;
+}
+
+.sidebar.show-sidebar {
+  display: flex;
+}

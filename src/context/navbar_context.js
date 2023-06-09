@@ -21,7 +21,7 @@ const [state, dispatch] = useReducer(reducer, initialState)
 
 
 return (
-  <NavigationContext.Provider value={{openSidebar, closeSidebar}}>
+  <NavigationContext.Provider value={{...state, openSidebar, closeSidebar}}>
 {children}
   </NavigationContext.Provider>
 )
