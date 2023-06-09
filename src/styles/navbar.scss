@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 16px;
 }
 
 .logo-navbar {
-  width: 200px;
+  width: 220px;
 }
 
 .nav-links {
@@ -29,22 +29,16 @@
   display: none;
   /* Other styles for the container */
 }
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+  .phone-container {
 
-.border-animation {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #000; /* Replace with desired border color */
-  animation: border-appear 0.5s forwards; /* Adjust the animation duration as needed */
-  transform-origin: left;
+  display: block;
 }
 
-.hamburger-icon {
-  font-size: 30px;
-  color: $primary-color-grey;
-  position: fixed;
-  top: 15px;
-  left: 15px;
+.nav-links {
+  display: flex;
+}
 }

@@ -1,23 +1,39 @@
 @import './common.scss';
-
 .sidebar {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 65%;
+  width: 100%;
+  z-index: 100;
+}
+
+.side-menu__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #090a1b58;
+}
+
+.sidebar-content {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  max-width: 400px; /* adjust the width as needed */
   background-color: $primary-color-black;
   color: white;
+  display: flex;
   flex-direction: column;
 }
 
 .sidebar-header {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 40px;
+  align-items: center;
   height: 100px;
+  padding: 0 20px;
 }
 
 .sidebar.show-sidebar {
@@ -26,40 +42,46 @@
 
 .logo-sidebar {
   width: 100%;
+  max-width: 200px; /* adjust the width as needed */
   margin-top: 40px;
 }
 
 .close-sidebar {
   font-size: 30px;
   color: white;
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .sidebar-links {
-  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
-  justify-content: space-around;
-
+  gap: 40px;
+  padding: 20px;
+  overflow-y: auto;
 }
 
-.sidebar-links  a {
+.sidebar-links a {
   color: white;
   font-size: 40px;
   padding-right: 10px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.sidebar-links  li {
- border-bottom: 0.5px solid white;
+.sidebar-links li {
+  border-bottom: 0.5px solid white;
 }
 
-.sidebar-links  span {
+.sidebar-links span {
   color: white;
   font-size: 50px;
   font-family: $secondary-font-cormorant;
   font-style: italic;
-
 }
