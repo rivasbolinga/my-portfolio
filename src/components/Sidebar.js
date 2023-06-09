@@ -16,7 +16,7 @@ const Sidebar = () => {
         <div className="sidebar-header">
           <img src={logo} className="logo-sidebar" alt="coding addict" />
           <button className="close-sidebar" onClick={closeSidebar}>
-            <span>&times;</span>
+            <TfiClose />
           </button>
         </div>
         <ul className="sidebar-links">
