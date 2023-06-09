@@ -3,8 +3,9 @@
 $primary-font:'Playfair Display SC';
 $secondary-font-badScript: 'Bad Script';
 $secondary-font-cormorant: 'Cormorant Garamond';
-$primary-color-grey: #555555;
-$primary-color-black: #1C1C1C;
+$primary-color-grey: #555;
+$primary-color-black: #1c1c1c;
+
 *,
 ::after,
 ::before {
@@ -12,6 +13,7 @@ $primary-color-black: #1C1C1C;
   padding: 0;
   box-sizing: border-box;
 }
+
 ul {
   list-style-type: none;
 }
@@ -33,4 +35,3 @@ button {
   background: none;
   border: none;
 }
-

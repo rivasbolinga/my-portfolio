@@ -1,4 +1,4 @@
-export const links = [
+const links = [
   {
     id: 1,
     text: 'home',
@@ -19,4 +19,6 @@ export const links = [
     text: 'contact',
     url: '/contact',
   },
-]
+];
+
+export default links;
