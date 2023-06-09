@@ -6,10 +6,9 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 60%;
+  width: 65%;
   background-color: $primary-color-black;
   color: white;
-  display: flex;
   flex-direction: column;
 }
 
@@ -27,11 +26,11 @@
 
 .logo-sidebar {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .close-sidebar {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   position: fixed;
   top: 15px;
@@ -49,7 +48,18 @@
 
 .sidebar-links  a {
   color: white;
-  font-size: 35px;
-  font-family: $primary-font;
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.sidebar-links  li {
+ border-bottom: 0.5px solid white;
+}
+
+.sidebar-links  span {
+  color: white;
+  font-size: 50px;
+  font-family: $secondary-font-cormorant;
+  font-style: italic;
 
 }
