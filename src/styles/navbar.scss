@@ -41,28 +41,10 @@
   transform-origin: left;
 }
 
-@keyframes border-appear {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.phone-container:hover .border-animation {
-  animation-play-state: running;
-}
-
-.phone-container .border-animation {
-  animation: border-disappear 0.5s forwards;
-}
-
-@keyframes border-disappear {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
+.hamburger-icon {
+  font-size: 30px;
+  color: $primary-color-grey;
+  position: fixed;
+  top: 15px;
+  left: 15px;
 }

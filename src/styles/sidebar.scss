@@ -2,8 +2,54 @@
 
 .sidebar {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60%;
+  background-color: $primary-color-black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  height: 100px;
 }
 
 .sidebar.show-sidebar {
   display: flex;
+}
+
+.logo-sidebar {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.close-sidebar {
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.sidebar-links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+
+}
+
+.sidebar-links  a {
+  color: white;
+  font-size: 35px;
+  font-family: $primary-font;
+
 }

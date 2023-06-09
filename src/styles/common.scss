@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Grandiflora+One&family=Playfair:wght@300&family=Saira+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Grandiflora+One&family=Playfair+Display+SC:ital@0;1&family=Playfair:wght@300&family=Saira+Condensed&display=swap');
 
-$primary-font:'Playfair';
+$primary-font:'Playfair Display SC';
 $secondary-font-badScript: 'Bad Script';
 $primary-color-grey: #555555;
 $primary-color-black: #1C1C1C;
@@ -26,5 +26,10 @@ p {
   font-family: $primary-font;
   color: $primary-color-grey;
   text-transform: capitalize;
+}
+
+button {
+  background: none;
+  border: none;
 }
 

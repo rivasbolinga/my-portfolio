@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <button className='hamburger-btn' type="button">
-        <RxHamburgerMenu onClick={openSidebar} />
+        <RxHamburgerMenu className="hamburger-icon" onClick={openSidebar} />
       </button>
       <ul className="nav-links">
         {links.map((link) => {
