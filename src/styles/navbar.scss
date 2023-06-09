@@ -1,0 +1,51 @@
+@import './common.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.logo-navbar {
+  width: 220px;
+}
+
+.hamburger-icon {
+  font-size: 30px;
+  color: $primary-color-black;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.say-hello {
+  font-family: $secondary-font-badScript;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: $primary-color-black;
+  cursor: pointer;
+}
+
+.phone-container {
+  display: none;
+
+  /* Other styles for the container */
+}
+
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  .phone-container {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}

@@ -1,0 +1,87 @@
+@import './common.scss';
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.side-menu__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #090a1b58;
+}
+
+.sidebar-content {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  max-width: 400px; /* adjust the width as needed */
+  background-color: $primary-color-black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.sidebar.show-sidebar {
+  display: flex;
+}
+
+.logo-sidebar {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.close-sidebar {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar-links a {
+  color: white;
+  font-size: 40px;
+  padding-right: 10px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.sidebar-links li {
+  border-bottom: 0.5px solid white;
+}
+
+.sidebar-links span {
+  color: white;
+  font-size: 50px;
+  font-family: $secondary-font-cormorant;
+  font-style: italic;
+}
