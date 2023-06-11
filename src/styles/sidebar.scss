@@ -22,9 +22,9 @@
 .sidebar-content {
   position: relative;
   height: 100%;
-  width: 60%;
+  width: 80%;
   max-width: 400px; /* adjust the width as needed */
-  background-color: $primary-color-black;
+  background-color: rgb(233,233,235);
   color: white;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
 
 .close-sidebar {
   font-size: 30px;
-  color: white;
+  color: $primary-color-black;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -69,19 +69,38 @@
 }
 
 .sidebar-links a {
-  color: white;
-  font-size: 40px;
+  color: $primary-color-black;
+  font-size: 30px;
   padding-right: 10px;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  font-family: 'Noto Serif Display';
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
 }
 
 .sidebar-links li {
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.454);
+  width: 100%;
 }
 
-.sidebar-links span {
-  color: white;
-  font-size: 50px;
-  font-family: $secondary-font-cormorant;
+// .sidebar-links span {
+//   color: $primary-color-black;
+//   font-size: 50px;
+//   font-family: $secondary-font-cormorant;
+//   font-style: italic;
+// }
+
+.number-menu {
+  font-size: 10px;
+}
+
+.works {
   font-style: italic;
+  font-family: 'Rock 3D';
+  font-weight: 200 ;
 }
