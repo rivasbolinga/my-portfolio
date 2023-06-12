@@ -44,6 +44,11 @@
 
 @media (min-width: 768px) {
 
+  .navbar {
+    justify-content: flex-end;
+    gap: 25%;
+  }
+
   .hamburger-btn {
     display: none;
   }
@@ -56,7 +61,7 @@
     display: flex;
     position: absolute;
     z-index: 10;
-    height: 600px;
+    height: 100vh;
     top: 0;
     left: 0;
     border-right: 1px solid black;
@@ -65,5 +70,11 @@
   }
    .nav-link {
   transform: rotate(0.75turn);
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-link {
+    font-size: 20px;
   }
 }

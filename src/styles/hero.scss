@@ -27,6 +27,7 @@
   text-transform: capitalize;
   border-bottom: 0.2px solid;
   margin: 0 0 50px -20px;
+  width: 100%;
 
 }
 
@@ -46,15 +47,13 @@
 
 
   .hero-section {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
+  main {
+    width: 100%;
+  }
 
-}
-.name-container {
-  grid-column: 1;
-  grid-row: 1;
 }
 
   .name-container h1 {
@@ -66,22 +65,34 @@
   border-top: 0.2px solid;
   
 }
-  .image-container {
-  display: block;
-  grid-column: 2;
-  grid-row: 1/3;
-  height: 100%;
-  
+  .scroll-right {
+  display: flex;
+
+  p {
+  font-family: $secondary-font-badScript;
+  transform: rotate(0.75turn);
+  font-size: 17px;
+
+  }
 }
 .text-container {
   font-size: 30px;
-  grid-column: 1;
-  grid-row: 2;
  
 }
 .text-container h2{
   font-size: 30px;
 
- 
+}
+}
+
+@media (min-width: 1000px) {
+.name-container h1 {
+
+  font-size: 170px;
+  font-weight: 100;
+  z-index: 12;
+  width: 100%;
+
+
 }
 }
