@@ -43,6 +43,7 @@
 }
 
 @media (min-width: 768px) {
+
   .hamburger-btn {
     display: none;
   }
@@ -53,5 +54,16 @@
 
   .nav-links {
     display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 600px;
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    justify-content: space-around;
+
+  }
+   .nav-link {
+  transform: rotate(0.75turn);
   }
 }
