@@ -1,3 +1,4 @@
+<img width="1435" alt="Screenshot 2023-06-12 at 21 50 06" src="https://github.com/rivasbolinga/my-portfolio/assets/103900838/4e319c2a-4ffd-4e44-b520-c6e322daa941">
 
 
 #  📖 My Portfolio  <a name="about-project"></a>
@@ -49,9 +50,8 @@ A comprehensive web developer portfolio that showcases my expertise in building 
 <!-- > Describe between 1-3 key features of the application.-->
 
 - [ ] **Totally responsive: tablet, phone and desktop**
-- [ ] **Navigation Routes: Home, About me, Products Page, Single Product Page, Cart and Profile**
-- [ ] **Checkout products**
-- [ ] **My profile**
+- [ ] **Navigation Routes: Home, About me, My works and Contact **
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -60,7 +60,7 @@ A comprehensive web developer portfolio that showcases my expertise in building 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live version 📍 [here](https://rusticroots.netlify.app/)
+still under construction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +92,7 @@ In order to run this project you need:
 
 
 ```
-git clone https://github.com/rivasbolinga/Rustic-Roots.git
+git clone https://github.com/rivasbolinga/my-portfolio.git
 ```
 
 - [ ] Open the file in your code editor
@@ -133,10 +133,11 @@ npm start
 
 <!-- Features -->
 ## 🔭 Future Features <a name="future-features"></a>
-
+My portfolio is still under construction so there are much more on the way:
 - [ ] **Improve design**
-- [ ] **Add my profile section**
-- [ ] **Add checkout for products**
+- [ ] **Contact section**
+- [ ] **My works section**
+- [ ] **About me section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +147,7 @@ npm start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues](https://github.com/rivasbolinga/Rustic-roots/issues).
+Feel free to check the [Issues](https://github.com/rivasbolinga/my-portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,15 +155,6 @@ Feel free to check the [Issues](https://github.com/rivasbolinga/Rustic-roots/iss
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project, please don't forget to follow us and give it a star.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Jonh Smilga for his great tutorial of Udemy teaching how to develop this code. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
