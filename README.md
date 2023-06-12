@@ -1,70 +1,168 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#  📖 My Portfolio  <a name="about-project"></a>
+Still under construction...
 
-In the project directory, you can run:
+A comprehensive web developer portfolio that showcases my expertise in building stunning and functional websites. With a focus on user experience and responsive design, my portfolio highlights a diverse range of projects, including e-commerce sites, corporate websites, and interactive web applications. Each project is carefully crafted, demonstrating my proficiency in front-end technologies such as HTML5, CSS3, and JavaScript frameworks like React .
+</div>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<a name="readme-top"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
 
-### `npm test`
+# 📗 Table of Contents
+ - [📖 Project Description](#-project-description-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License](#license)
+  - 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm run build`
+### Tech Stack <a name="tech-stack"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="55"/></a><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="55"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+<img align="center" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="react" width="60" height="60"/></a>
+<a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
+<img align="center" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="sass" width="60" height="60"/></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<!-- Features -->
+### Key Features <a name="key-features"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- > Describe between 1-3 key features of the application.-->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] **Totally responsive: tablet, phone and desktop**
+- [ ] **Navigation Routes: Home, About me, Products Page, Single Product Page, Cart and Profile**
+- [ ] **Checkout products**
+- [ ] **My profile**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Learn More
+<!-- LIVE DEMO -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Live Demo <a name="live-demo"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can see the live version 📍 [here](https://rusticroots.netlify.app/)
 
-### Code Splitting
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- GETTING STARTED -->
 
-### Analyzing the Bundle Size
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To get a local copy up and running, follow these steps.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- PREREQUISITES -->
 
-### Advanced Configuration
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+In order to run this project you need:
 
-### Deployment
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Webpack installed
+- [ ] Knowledge of some basic Git commands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- SETUP -->
 
-### `npm run build` fails to minify
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Link your PC to GitHub
+- [ ] Clone this repository to your desired folder:
+
+
+```
+git clone https://github.com/rivasbolinga/Rustic-Roots.git
+```
+
+- [ ] Open the file in your code editor
+  
+<!-- INSTALL -->
+
+### Install
+
+Install this project with:
+
+```
+npm install
+```
+
+###  Instal linters for React and Redux:
+
+Here the link to install your linters: https://github.com/microverseinc/linters-config
+
+<!-- USAGE -->
+
+### Usage
+To run the project, execute the following command:
+
+```
+npm start
+```
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Andrea Rivas**
+
+- GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
+- LinkedIn: [Andrea Rivas](https://www.linkedin.com/in/andrearivaspalacios/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Features -->
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Improve design**
+- [ ] **Add my profile section**
+- [ ] **Add checkout for products**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [Issues](https://github.com/rivasbolinga/Rustic-roots/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please don't forget to follow us and give it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Jonh Smilga for his great tutorial of Udemy teaching how to develop this code. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
