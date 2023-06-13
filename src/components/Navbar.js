@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { BsCodeSlash } from 'react-icons/bs';
 import links from '../utils/data';
 import logo from '../assets/logo.png';
 import '../styles/navbar.scss';
@@ -11,14 +11,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <button className="hamburger-btn" type="button">
-        <RxHamburgerMenu className="hamburger-icon" onClick={openSidebar} />
+        <BsCodeSlash className="hamburger-icon" onClick={openSidebar} />
       </button>
       <ul className="nav-links">
         {links.map((link) => {
           const { id, text, url } = link;
           return (
-            <li key={id}>
-              <Link to={url}>{text}</Link>
+            <li className="nav-link" key={id}>
+              <Link className="nav-link" to={url}>
+                {text}
+              </Link>
             </li>
           );
         })}
@@ -30,7 +32,6 @@ const Navbar = () => {
       </div>
       <p className="phone-container">
         say
-
         <span className="say-hello"> hello</span>
       </p>
     </nav>

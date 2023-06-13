@@ -5,6 +5,12 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 16px;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(245, 222, 179, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .logo-navbar {
@@ -37,8 +43,21 @@
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    justify-content: flex-end;
+    gap: 25%;
+  }
+
   .hamburger-btn {
     display: none;
+  }
+
+  .logo-navbar {
+    width: 220px;
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    left: 40%;
   }
 
   .phone-container {
@@ -47,5 +66,32 @@
 
   .nav-links {
     display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .nav-link {
+    transform: rotate(0.75turn);
+    width: 100px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .navbar {
+    gap: 30%;
   }
 }
