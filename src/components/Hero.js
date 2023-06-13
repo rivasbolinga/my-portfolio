@@ -3,10 +3,10 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Hero = () => (
   <section className="hero-section">
-    <main>
+    <main className="hero-center">
       <div className="name-container">
-        <h1>andrea</h1>
-        <h1>rivas</h1>
+        <h1 className="andrea">andrea</h1>
+        <h1 className="rivas">rivas</h1>
       </div>
       <div className="text-container">
         <h2>

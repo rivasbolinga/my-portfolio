@@ -1,34 +1,42 @@
 @import './common.scss';
 
-
 .hero-section {
-  background-color:rgb(250,250,250) ;
+  background-color: rgb(250, 250, 250);
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
   position: relative;
   z-index: 1;
-  justify-content: end;
-  align-items: end;
   padding: 100px 20px 0 0;
 }
 
-.image-container {
+.hero-center {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.scroll-right {
   display: none;
 }
 
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  border-bottom: 0.1px solid black;
+  transform: rotate(0.75turn);
+  margin-top: -60px;
+}
 
 .name-container h1 {
-  transform: rotate(0.75turn);
   font-size: 60px;
   font-family: $primary-title;
   font-weight: 100;
-  text-transform: capitalize;
-  border-bottom: 0.2px solid;
-  margin: 0 0 50px -20px;
-  width: 100%;
-
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .text-container {
@@ -36,63 +44,100 @@
 }
 
 .text-container h2 {
-  font-family:'Noto Serif Display';
+  font-family: $secondary-font-noto;
   font-style: italic;
   font-weight: 100;
   font-size: 15px;
   text-align: right;
 }
 
-@media (min-width:768px) {
-
-
+@media (min-width: 768px) {
   .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+      width: 100%;
+    }
+  }
+
+  .hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name-container {
+    transform: none;
     width: 100%;
   }
 
-}
-
   .name-container h1 {
-  transform: none;
-  font-size: 120px;
-  text-align: center;
-  text-align: center;
-  margin: 0;
-  border-top: 0.2px solid;
-  
-}
-  .scroll-right {
-  display: flex;
-
-  p {
-  font-family: $secondary-font-badScript;
-  transform: rotate(0.75turn);
-  font-size: 17px;
-
+    font-size: 120px;
+    padding-top: 10px;
+    margin: 0;
+    border-top: 0.2px solid;
+    width: 100%;
   }
-}
-.text-container {
-  font-size: 30px;
- 
-}
-.text-container h2{
-  font-size: 30px;
 
-}
+  .scroll-right {
+    display: flex;
+
+    p {
+      font-family: $secondary-font-badScript;
+      transform: rotate(0.75turn);
+      font-size: 15px;
+      border-bottom: 0.1px solid;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+
+  .text-container {
+    align-self: flex-end;
+    width: 500px;
+    text-align: end;
+
+    h2 {
+      font-size: 25px;
+      padding: 20px;
+    }
+  }
+
+  .andrea {
+    text-align: left;
+    padding-left: 120px;
+  }
+
+  .rivas {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1000px) {
-.name-container h1 {
+  .name-container h1 {
+    font-size: 140px;
+    font-weight: 100;
+    z-index: 12;
+    width: 100%;
+  }
 
-  font-size: 170px;
-  font-weight: 100;
-  z-index: 12;
-  width: 100%;
+  .andrea {
+    padding-left: 14%;
+  }
 
+  .rivas {
+    padding-right: 14%;
+  }
 
-}
+  .text-container {
+    text-align: right;
+    width: 600px;
+
+    h2 {
+      font-size: 30px;
+    }
+  }
 }

@@ -24,7 +24,7 @@
   height: 100%;
   width: 80%;
   max-width: 400px; /* adjust the width as needed */
-  background-color: rgb(233,233,235);
+  background-color: rgb(233, 233, 235);
   color: white;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@
   font-size: 30px;
   padding-right: 10px;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  font-family: 'Noto Serif Display';
+  font-family: $secondary-font-noto;
   font-weight: 300;
   text-transform: uppercase;
   display: flex;
@@ -88,19 +88,12 @@
   width: 100%;
 }
 
-// .sidebar-links span {
-//   color: $primary-color-black;
-//   font-size: 50px;
-//   font-family: $secondary-font-cormorant;
-//   font-style: italic;
-// }
-
 .number-menu {
   font-size: 10px;
 }
 
 .works {
   font-style: italic;
-  font-family: 'Rock 3D';
-  font-weight: 200 ;
+  font-family: $secondary-font-rock;
+  font-weight: 200;
 }
