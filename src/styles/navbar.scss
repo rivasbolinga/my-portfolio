@@ -113,3 +113,17 @@
     gap: 30%;
   }
 }
+
+@media (min-width: 1600px) {
+.nav-link {
+    font-size: 24px;
+  }
+  .logo-navbar {
+    width: 300px;
+  }
+  @media (max-height: 1000px) {
+     .nav-links {
+        padding: 0;
+      }
+  }
+}
