@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 16px;
   position: absolute;
   z-index: 10;
@@ -64,6 +64,15 @@
     display: block;
   }
 
+  // .nav-links-container {
+  //   background-color: red;
+  //   height: 100%;
+  //   width: 100%;
+  //   display: flex;
+  //   position: absolute;
+  //   z-index: 10;
+  // }
+
   .nav-links {
     display: flex;
     position: absolute;
@@ -74,6 +83,15 @@
     border-right: 1px solid black;
     justify-content: space-around;
     gap: 40px;
+    padding: 20% 0;
+  }
+
+  @media (min-width: 1000px) {
+    @media (min-height: 600px ) {
+      .nav-links {
+        padding: 4% 0;
+      }
+    }
   }
 
   .nav-link {

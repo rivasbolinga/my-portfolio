@@ -56,7 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 30% 0;
     main {
       width: 100%;
     }
@@ -72,15 +72,18 @@
   .name-container {
     transform: none;
     width: 100%;
+    gap: 30px;
+    padding: 20% 0 0 0;
   }
 
   .name-container h1 {
-    font-size: 120px;
+    font-size: 160px;
     padding-top: 10px;
     margin: 0;
     border-top: 0.2px solid;
     width: 100%;
   }
+
 
   .scroll-right {
     display: flex;
@@ -140,4 +143,31 @@
       font-size: 30px;
     }
   }
+  @media (max-height: 710px) {
+.name-container {
+  padding: 25% 0 0 0;
+  gap: 0;
+}
+
+.name-container h1 {
+  font-size: 100px;
+}
+
+}
+@media (max-height: 900px) {
+  .name-container {
+  gap: 0;
+}
+}
+}
+
+@media (min-width: 1300px) {
+    @media (max-height: 810px) {
+.name-container {
+  padding: 15% 0 0 0;
+}
+.name-container h1 {
+  font-size: 130px;
+}
+}
 }

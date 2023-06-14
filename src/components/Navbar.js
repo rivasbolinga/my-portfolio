@@ -13,6 +13,7 @@ const Navbar = () => {
       <button className="hamburger-btn" type="button">
         <BsCodeSlash className="hamburger-icon" onClick={openSidebar} />
       </button>
+
       <ul className="nav-links">
         {links.map((link) => {
           const { id, text, url } = link;
