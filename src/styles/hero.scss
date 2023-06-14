@@ -116,7 +116,14 @@
 
   .rivas {
     text-align: right;
+    padding-right: 20px;
   }
+  @media (max-height:1000px) {
+      .name-container h1 {
+        font-size: 120px;
+      }
+    }
+
 }
 
 @media (min-width: 1000px)  {
@@ -143,7 +150,7 @@
       font-size: 30px;
     }
   }
-  @media (max-height: 710px) {
+  @media (max-height: 910px) {
 .name-container {
   padding: 25% 0 0 0;
   gap: 0;
@@ -153,11 +160,6 @@
   font-size: 100px;
 }
 
-}
-@media (max-height: 900px) {
-  .name-container {
-  gap: 0;
-}
 }
 }
 

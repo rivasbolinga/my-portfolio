@@ -19,8 +19,8 @@ const Navbar = () => {
           const { id, text, url } = link;
           return (
             <li className="nav-link" key={id}>
-              <Link className="nav-link" to={url}>
-                {text}
+              <Link to={url}>
+                <p className="nav-link-rotate">{text}</p>
               </Link>
             </li>
           );
