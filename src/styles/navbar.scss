@@ -102,18 +102,58 @@
     }
   }
 }
+@media (min-width: 1100px) {
+  @media (max-height: 800px) {
+    .nav-links {
+      padding: 8% 0;
+      gap: 150px;
+    }
+  }
+}
 
-// @media (min-width: 1000px) {
-//   .nav-link {
-//     font-size: 20px;
-//   }
-// // }
+@media (min-width: 1200px) {
+  @media (max-height: 800px) {
+    .nav-links {
+      padding: 7% 0;
+      gap: 150px;
+    }
+  }
+}
 
-// @media (min-width: 1040px) {
-//   .navbar {
-//     gap: 30%;
-//   }
-// }
+@media (min-width: 1300px) {
+  @media (max-height: 800px) {
+    .nav-links {
+      padding: 5% 0;
+      gap: 100px;
+    }
+  }
+}
+
+
+@media (min-width: 1400px) {
+  @media (max-height: 800px) {
+    .nav-links {
+      padding: 5% 0;
+      gap: 100px;
+    }
+  }
+  .nav-links {
+      padding: 5% 0;
+      gap: 150px;
+    }
+
+}
+
+@media (min-width: 1500px) {
+  @media (max-height: 800px) {
+    .nav-links {
+      padding: 3% 0;
+      gap: 70px;
+    }
+  }
+}
+
+
 
 @media (min-width: 1600px) {
   .nav-link {
@@ -121,7 +161,7 @@
   }
 
   .logo-navbar {
-    width: 300px;
+    width: 500px;
   }
 
   @media (max-height: 1000px) {

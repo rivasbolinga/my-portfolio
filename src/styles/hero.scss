@@ -163,6 +163,20 @@
   }
 }
 
+@media (min-width: 1100px) {
+  @media (max-height: 810px) {
+    .name-container h1 {
+      font-size: 120px;
+    }
+  }}
+
+  @media (min-width: 1200px) {
+  @media (max-height: 810px) {
+    .name-container h1 {
+      font-size: 130px;
+    }
+  }}
+
 @media (min-width: 1300px) {
   @media (max-height: 810px) {
     .name-container {
@@ -170,7 +184,7 @@
     }
 
     .name-container h1 {
-      font-size: 130px;
+      font-size: 140px;
     }
   }
 
@@ -179,6 +193,8 @@
     padding: 10% 0 0 0;
   }
 
+}
+@media (min-width: 1400px) {
   .name-container h1 {
     font-size: 160px;
   }
