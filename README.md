@@ -60,7 +60,7 @@ A comprehensive web developer portfolio that showcases my expertise in building 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-still under construction
+You can see the lice demo 📍 [here](https://andrearivas.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
