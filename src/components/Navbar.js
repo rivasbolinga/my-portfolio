@@ -13,13 +13,14 @@ const Navbar = () => {
       <button className="hamburger-btn" type="button">
         <BsCodeSlash className="hamburger-icon" onClick={openSidebar} />
       </button>
+
       <ul className="nav-links">
         {links.map((link) => {
           const { id, text, url } = link;
           return (
             <li className="nav-link" key={id}>
-              <Link className="nav-link" to={url}>
-                {text}
+              <Link to={url}>
+                <p className="nav-link-rotate">{text}</p>
               </Link>
             </li>
           );
