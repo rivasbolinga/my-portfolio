@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { TbHandStop } from 'react-icons/tb';
+import '../styles/hello.scss';
 
 const Hello = () => {
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState(true);
 
   const hoverIn = () => {
     setHovered(true);
@@ -13,10 +14,16 @@ const Hello = () => {
   };
 
   return (
-    <div className="phone-container" onMouseEnter={hoverIn} onMouseLeave={hoverOut}>
-      {hovered && <TbHandStop />}
-      <p>say</p>
-      <span className="say-hello"> hello</span>
+    <div
+      className="phone-container"
+      onMouseEnter={hoverIn}
+      onMouseLeave={hoverOut}
+    >
+      {hovered && <TbHandStop className="hand-icon" />}
+      <div className="say-hello-text">
+        <p>say</p>
+        <span className="say-hello"> hello</span>
+      </div>
     </div>
   );
 };
