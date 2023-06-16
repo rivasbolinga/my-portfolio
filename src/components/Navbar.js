@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BsCodeSlash } from 'react-icons/bs';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import links from '../utils/data';
 import logo from '../assets/logo.png';
 import '../styles/navbar.scss';
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <button className="hamburger-btn" type="button">
-        <BsCodeSlash className="hamburger-icon" onClick={openSidebar} />
+        <RxHamburgerMenu className="hamburger-icon" onClick={openSidebar} />
       </button>
 
       <ul className="nav-links">

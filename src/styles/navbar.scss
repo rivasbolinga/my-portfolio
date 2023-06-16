@@ -3,14 +3,15 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 16px;
+  justify-content: space-between;
+  padding: 10px;
   position: absolute;
   z-index: 10;
   background-color: rgba(245, 222, 179, 0);
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.264);
 }
 
 .logo-navbar {
