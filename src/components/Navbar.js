@@ -4,6 +4,7 @@ import links from '../utils/data';
 import logo from '../assets/logo.png';
 import '../styles/navbar.scss';
 import { useNavigationContext } from '../context/navbar_context';
+import Hello from './Hello';
 
 const Navbar = () => {
   const { openSidebar } = useNavigationContext();
@@ -31,10 +32,7 @@ const Navbar = () => {
           <img className="logo-navbar" src={logo} alt="Andrea Rivas" />
         </Link>
       </div>
-      <p className="phone-container">
-        say
-        <span className="say-hello"> hello</span>
-      </p>
+      <Hello />
     </nav>
   );
 };
