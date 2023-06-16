@@ -8,4 +8,5 @@ export {
   Sidebar,
   Hero,
   Sliders,
+
 };
