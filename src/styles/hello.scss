@@ -7,8 +7,8 @@
   z-index: 0;
   top: 0;
   right: 0;
-    animation: wave 2s infinite;
-  transform-origin: bottom right;
+    animation: wave 1s infinite;
+ 
   
 }
 
@@ -17,7 +17,7 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(30deg);
+    transform: rotate(60deg);
   }
   100% {
     transform: rotate(0deg);
