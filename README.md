@@ -44,7 +44,8 @@ A comprehensive web developer portfolio that showcases my expertise in building 
 <!-- > Describe between 1-3 key features of the application.-->
 
 - [ ] **Collaborative session**
-- [ ] **Navigation Routes: Home, About me, My works and Contact**
+- [ ] **Nice design**
+- [ ] **Bootstrap elements**
 
 
 
