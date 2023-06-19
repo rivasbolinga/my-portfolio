@@ -1,10 +1,11 @@
-<img width="1435" alt="Screenshot 2023-06-12 at 21 50 06" src="https://github.com/rivasbolinga/my-portfolio/assets/103900838/4e319c2a-4ffd-4e44-b520-c6e322daa941">
+
+![Minimalist Neutral Multi Device Computer Mockup Website Launch Instagram Post (2)](https://github.com/rivasbolinga/my-portfolio/assets/103900838/d6160861-734c-4317-a0ed-4018e57dc273)
 
 
-#  📖 My Portfolio  <a name="about-project"></a>
-Still under construction...
+#  📖 My Portfolio - Practice Bootstrap <a name="about-project"></a>
 
-A comprehensive web developer portfolio that showcases my expertise in building stunning and functional websites. With a focus on user experience and responsive design, my portfolio highlights a diverse range of projects, including e-commerce sites, corporate websites, and interactive web applications. Each project is carefully crafted, demonstrating my proficiency in front-end technologies such as HTML5, CSS3, and JavaScript frameworks like React .
+
+A comprehensive web developer portfolio that showcases my expertise in building stunning and functional websites. This is a practice exercise done as part as a collaborative exercise with the goal to learn Bootstrap
 </div>
 
 
@@ -13,7 +14,6 @@ A comprehensive web developer portfolio that showcases my expertise in building 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
- - [📖 Project Description](#-project-description-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
