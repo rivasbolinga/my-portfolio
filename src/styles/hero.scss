@@ -54,12 +54,16 @@
 @media (min-width: 768px) {
   .hero-section {
     padding: 0;
+    display: flex;
+    flex-direction: row;
   }
+
   .hero-center {
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow-y: hidden;
+    width: 94%;
   }
 
   .name-container {
@@ -77,21 +81,33 @@
   .link-container {
     width: 8%;
     border-right: 0.5px solid black;
-  
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5% 1.4%;
+    padding: 5px 2px;
   }
 
   .text-container {
-    width: 85%;
+    width: 100%;
+    padding:0 20px;
     h1 {
       font-size: 140px;
       text-transform: capitalize;
       font-weight: 100;
-      padding: 0 20px;
     }
+   
+    @media (min-width: 1200px) {
+      padding: 0 30px;
+      h1 {
+        font-size:150px;
+      }
+    } 
+    @media (min-width: 1400px) {
+      padding: 0 40px;
+      h1 {
+        font-size:160px;
+      }
+    } 
   }
 
   .link-rotate  {
@@ -102,160 +118,34 @@
   .surname {
     text-align: right;
   }
+  .scroll-right {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: $secondary-font-badScript;
+      transform: rotate(0.75turn);
+      font-size: 17px;
+      border-bottom: 0.1px solid;
+      text-align: center;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+  .sentence {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+     h2{
+      width: 300px;
+      font-size: 16px;
+      justify-self: flex-end;
+      align-self: flex-end;
+      text-align: right;
+      padding-top: 10px;
+    }
+  }
 }
-//   .hero-section {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 30% 0;
-
-//     main {
-//       width: 100%;
-//     }
-//   }
-
-//   .hero-center {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .name-container {
-//     transform: none;
-//     width: 100%;
-//     gap: 30px;
-//     padding: 20% 0 0 0;
-//   }
-
-//   .name-container h1 {
-//     font-size: 160px;
-//     padding-top: 10px;
-//     margin: 0;
-//     border-top: 0.2px solid;
-//     width: 100%;
-//   }
-
-//   .scroll-right {
-//     display: flex;
-
-//     p {
-//       font-family: $secondary-font-badScript;
-//       transform: rotate(0.75turn);
-//       font-size: 15px;
-//       border-bottom: 0.1px solid;
-//       text-align: center;
-//       white-space: nowrap;
-//     }
-//   }
-
-//   .text-container {
-//     align-self: flex-end;
-//     width: 500px;
-//     text-align: end;
-
-//     h2 {
-//       font-size: 25px;
-//       padding: 20px;
-//     }
-//   }
-
-//   .andrea {
-//     text-align: left;
-//     padding-left: 120px;
-//   }
-
-//   .rivas {
-//     text-align: right;
-//     padding-right: 20px;
-//   }
-
-//   @media (max-height: 1000px) {
-//     .name-container h1 {
-//       font-size: 120px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1000px) {
-//   .name-container h1 {
-//     font-size: 140px;
-//     font-weight: 100;
-//     z-index: 12;
-//     width: 100%;
-//   }
-
-//   .andrea {
-//     padding-left: 14%;
-//   }
-
-//   .rivas {
-//     padding-right: 14%;
-//   }
-
-//   .text-container {
-//     text-align: right;
-//     width: 600px;
-
-//     h2 {
-//       font-size: 30px;
-//     }
-//   }
-
-//   @media (max-height: 910px) {
-//     .name-container {
-//       padding: 25% 0 0 0;
-//       gap: 0;
-//     }
-
-//     .name-container h1 {
-//       font-size: 100px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1100px) {
-//   @media (max-height: 810px) {
-//     .name-container h1 {
-//       font-size: 120px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   @media (max-height: 810px) {
-//     .name-container h1 {
-//       font-size: 130px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1300px) {
-
-//     .name-container {
-//       padding: 15% 0 0 0;
-//     }
-
-//     .name-container h1 {
-//       font-size: 140px;
-    
-//   }
-// }
-
-// @media (min-width: 1400px) {
-//   .name-container h1 {
-//     font-size: 160px;
-//   }
-// }
-
-// @media (min-width: 1600px) {
-//   .name-container h1 {
-//     font-size: 180px;
-//   }
-// }
-
-// @media (min-width: 1800px) {
-//   .name-container h1 {
-//     font-size: 200px;
-//   }
-// }

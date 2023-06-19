@@ -38,10 +38,11 @@ const Hero = () => (
             <p className="link-rotate">contact</p>
           </Link>
         </div>
-        <div className="text-container">
+        <div className="text-container sentence">
           <h2>
-            Font-end developer. Passionate about creating unforgettable
-            experiences
+            Welcome to my world of web wizardry, where design meets code and
+            user experience becomes extraordinary – I am your front-end
+            developer extraordinaire!
             {' '}
           </h2>
         </div>
