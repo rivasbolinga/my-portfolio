@@ -89,12 +89,18 @@
     h1 {
       font-size: 140px;
       text-transform: capitalize;
+      font-weight: 100;
+      padding: 0 20px;
     }
   }
 
   .link-rotate  {
     transform: rotate(0.75turn);
     font-family: $primary-title;
+  }
+
+  .surname {
+    text-align: right;
   }
 }
 //   .hero-section {

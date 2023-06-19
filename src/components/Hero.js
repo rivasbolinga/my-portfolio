@@ -29,7 +29,7 @@ const Hero = () => (
           <p className="link-rotate">works</p>
         </div>
         <div className="text-container">
-          <h1>rivas</h1>
+          <h1 className="surname">rivas</h1>
         </div>
       </div>
       <div className="home-container">
