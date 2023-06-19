@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   padding: 16px;
   position: absolute;
   z-index: 10;
@@ -11,6 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.282);
 }
 
 .logo-navbar {
@@ -28,14 +29,6 @@
   gap: 15px;
 }
 
-.say-hello {
-  font-family: $secondary-font-badScript;
-  text-transform: capitalize;
-  font-size: 30px;
-  color: $primary-color-black;
-  cursor: pointer;
-}
-
 .phone-container {
   display: none;
 
@@ -46,6 +39,7 @@
   .navbar {
     justify-content: flex-end;
     gap: 25%;
+    border: none;
   }
 
   .hamburger-btn {
@@ -65,7 +59,7 @@
   }
 
   .nav-links {
-    display: flex;
+    display: none;
     position: absolute;
     z-index: 10;
     height: 100vh;

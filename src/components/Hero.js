@@ -1,19 +1,50 @@
 import '../styles/hero.scss';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Hero = () => (
   <section className="hero-section">
     <main className="hero-center">
-      <div className="name-container">
-        <h1 className="andrea">andrea</h1>
-        <h1 className="rivas">rivas</h1>
+      <div className="home-container">
+        <div className="link-container">
+          <Link to="/">
+            <p className="link-rotate">home</p>
+          </Link>
+        </div>
+        <div className="text-container" />
       </div>
-      <div className="text-container">
-        <h2>
-          Font-end developer. Passionate about creating unforgettable
-          experiences
-          {' '}
-        </h2>
+      <div className="home-container">
+        <div className="link-container">
+          <Link to="/about">
+            <p className="link-rotate">about</p>
+          </Link>
+        </div>
+        <div className="text-container">
+          <h1>andrea</h1>
+        </div>
+      </div>
+      <div className="home-container">
+        <div className="link-container">
+          <Link to="/works" />
+          <p className="link-rotate">works</p>
+        </div>
+        <div className="text-container">
+          <h1>rivas</h1>
+        </div>
+      </div>
+      <div className="home-container">
+        <div className="link-container">
+          <Link to="/contact">
+            <p className="link-rotate">contact</p>
+          </Link>
+        </div>
+        <div className="text-container">
+          <h2>
+            Font-end developer. Passionate about creating unforgettable
+            experiences
+            {' '}
+          </h2>
+        </div>
       </div>
     </main>
     <div className="scroll-right">
