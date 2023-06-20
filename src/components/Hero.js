@@ -20,7 +20,7 @@ const Hero = () => (
           </Link>
         </div>
         <div className="text-container">
-          <h1>andrea</h1>
+          <h1 className="name-rotate">andrea</h1>
         </div>
       </div>
       <div className="home-container">
@@ -29,7 +29,7 @@ const Hero = () => (
           <p className="link-rotate">works</p>
         </div>
         <div className="text-container">
-          <h1 className="surname">rivas</h1>
+          <h1 className="surname name-rotate">rivas</h1>
         </div>
       </div>
       <div className="home-container">
