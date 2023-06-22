@@ -106,6 +106,7 @@
     font-family: $primary-title;
     height: 25%;    
   }
+
   .link-container {
     width: 50px;
     border-right: 0.5px solid black;
@@ -116,11 +117,35 @@
   }
 
 
-  .home-container.section-hovered {
-    background-color: black;
-    position: relative;
-    z-index: 30;
+  .link-white {
+    color: rgba(255, 255, 255, 0.536);
   }
+
+
+
+
+
+
+
+.home-container.section-hovered {
+ 
+  animation: gradientAnimation 0.5s linear forwards;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 0;
+    
+  }
+  100% {
+    background-position: 100% 0;
+    background-color: black;
+  }
+}
+
 
   .scroll-right {
     position: relative;

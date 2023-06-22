@@ -27,7 +27,7 @@ const Hero = () => {
                 onMouseLeave={() => hoverOut(id)}
               >
                 <Link to={url}>
-                  <p className="link-rotate">{text}</p>
+                  <p className={`link-rotate ${isHovered ? 'link-white' : ''}`}>{text}</p>
                 </Link>
               </div>
               <div className="text-container">
