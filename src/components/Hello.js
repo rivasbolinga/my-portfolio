@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { TbHandStop } from 'react-icons/tb';
 import '../styles/hello.scss';
+import { HoverContext } from '../context/hover_context';
 
 const Hello = () => {
-  const [hovered, setHovered] = useState(true);
-
-  const hoverIn = () => {
-    setHovered(true);
-  };
-
-  const hoverOut = () => {
-    setHovered(false);
-  };
+  const { isHovered, hoverIn, hoverOut } = useContext(HoverContext);
 
   return (
     <div
@@ -19,7 +12,7 @@ const Hello = () => {
       onMouseEnter={hoverIn}
       onMouseLeave={hoverOut}
     >
-      {hovered && <TbHandStop className="hand-icon" />}
+      {isHovered && <TbHandStop className="hand-icon" />}
       <div className="say-hello-text">
         <p>say</p>
         <span className="say-hello"> hello</span>
