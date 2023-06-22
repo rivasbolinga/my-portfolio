@@ -7,6 +7,7 @@ import { HoverContext } from '../context/hover_context';
 const Hero = () => {
   const { links, hoverIn, hoverOut } = useContext(HoverContext);
 
+  const areAllLinksNotHovered = links.every((link) => !link.isHovered);
   return (
     <section className="hero-section">
       <main className="hero-center">
@@ -30,17 +31,22 @@ const Hero = () => {
                 </Link>
               </div>
               <div className="text-container">
-                {isHovered && <h1 className="section-hovered-title">{text}</h1>}
-                <h1 className="name-rotate">{content}</h1>
+                {isHovered ? (
+                  <h1 className="section-hovered-title">{text}</h1>
+                ) : (
+                  <h1 className="name-rotate">{content}</h1>
+                )}
               </div>
             </div>
           );
         })}
       </main>
-      <div className="scroll-right">
-        <p>scroll right</p>
-        <AiOutlineArrowRight />
-      </div>
+      {areAllLinksNotHovered && (
+        <div className="scroll-right">
+          <p>scroll right</p>
+          <AiOutlineArrowRight />
+        </div>
+      )}
     </section>
   );
 };

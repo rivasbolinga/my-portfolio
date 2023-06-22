@@ -1,13 +1,18 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import links from '../utils/data';
 import logo from '../assets/logo.png';
 import '../styles/navbar.scss';
 import { useNavigationContext } from '../context/navbar_context';
 import Hello from './Hello';
+import { HoverContext } from '../context/hover_context';
 
 const Navbar = () => {
   const { openSidebar } = useNavigationContext();
+  const { links } = useContext(HoverContext);
+  const firstLinkId = links[0].id;
+  const isHomeLinkHovered = links.find((link) => link.id === firstLinkId)?.isHovered;
+  console.log(isHomeLinkHovered);
 
   return (
     <nav className="navbar">
@@ -27,12 +32,14 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <div className="logo-container">
-        <Link to="/">
-          <img className="logo-navbar" src={logo} alt="Andrea Rivas" />
-        </Link>
-      </div>
-      <Hello />
+      {isHomeLinkHovered ? null : (
+        <div className="logo-container">
+          <Link to="/">
+            <img className="logo-navbar" src={logo} alt="Andrea Rivas" />
+          </Link>
+        </div>
+      )}
+      {isHomeLinkHovered ? null : <Hello />}
     </nav>
   );
 };
