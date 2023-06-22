@@ -113,6 +113,16 @@
     justify-content: center;
     padding: 5px 2px;
   }
+  .home-container.section-hovered {
+    background-color: black;
+  }
+  
+  .section-hovered-title {
+    color: $primary-color-grey;
+    font-size: 80px;
+    text-align: center;
+    
+  }
 
   .text-container {
     width: calc(100% - 50px);
