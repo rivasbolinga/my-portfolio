@@ -98,6 +98,11 @@
 
   .name-container {
     transform: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
   }
   .home-container {
     display: flex;
@@ -123,13 +128,17 @@
 
 
 
-
+.home-container {
+  transition-delay: 1s;
+  transition-property: background-color;
+}
 
 
 
 .home-container.section-hovered {
  
-  animation: gradientAnimation 0.5s linear forwards;
+  animation: gradientAnimation 1s linear forwards;
+  transition-delay: 250ms;
 }
 
 @keyframes gradientAnimation {
@@ -162,6 +171,7 @@
   .text-container {
     width: calc(100% - 50px);
      padding:0 20px;
+     height: 100%;
     h1 {
       font-size: 140px;
       text-transform: uppercase;
@@ -193,9 +203,22 @@
     font-family: $primary-title;
   }
 
-  .surname {
-    text-align: right;
+  .name-container.about {
+    margin: 0;
   }
+
+  .name-container.works {
+    text-align: right;
+    font-family: $primary-title;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .name-container.contact {
+    font-size: 35px;
+    margin: 0;
+  }
+
   .scroll-right {
     display: flex;
     height: 100%;

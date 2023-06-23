@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { HoverContext } from '../context/hover_context';
 
 const Hero = () => {
-  const { links, hoverIn, hoverOut } = useContext(HoverContext);
+  const { links, hoverInId, hoverOutId } = useContext(HoverContext);
 
   const areAllLinksNotHovered = links.every((link) => !link.isHovered);
   return (
@@ -23,18 +23,22 @@ const Hero = () => {
             >
               <div
                 className="link-container"
-                onMouseEnter={() => hoverIn(id)}
-                onMouseLeave={() => hoverOut(id)}
+                onMouseEnter={() => hoverInId(id)}
+                onMouseLeave={() => hoverOutId(id)}
               >
                 <Link to={url}>
-                  <p className={`link-rotate ${isHovered ? 'link-white' : ''}`}>{text}</p>
+                  <p className={`link-rotate ${isHovered ? 'link-white' : ''}`}>
+                    {text}
+                  </p>
                 </Link>
               </div>
               <div className="text-container">
                 {isHovered ? (
-                  <h1 className="section-hovered-title">{text}</h1>
+                  <Link to={url}>
+                    <h1 className="section-hovered-title">{text}</h1>
+                  </Link>
                 ) : (
-                  <h1 className="name-rotate">{content}</h1>
+                  <h1 className={`name-container ${text}`}>{content}</h1>
                 )}
               </div>
             </div>
