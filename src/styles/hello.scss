@@ -1,0 +1,41 @@
+@import './common.scss';
+
+.hand-icon {
+  color: rgba(255, 191, 0, 0.566);
+  font-size: 80px;
+  position: relative;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  animation: wave 1s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(70deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.say-hello-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.say-hello {
+  font-family: $secondary-font-badScript;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: $primary-color-black;
+  cursor: pointer;
+}

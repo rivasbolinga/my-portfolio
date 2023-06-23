@@ -1,17 +1,21 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { BsCodeSlash } from 'react-icons/bs';
-import links from '../utils/data';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import logo from '../assets/logo.png';
 import '../styles/navbar.scss';
 import { useNavigationContext } from '../context/navbar_context';
+import Hello from './Hello';
+import { HoverContext } from '../context/hover_context';
 
 const Navbar = () => {
   const { openSidebar } = useNavigationContext();
-
+  const { links } = useContext(HoverContext);
+  const firstLinkId = links[0].id;
+  const isHomeLinkHovered = links.find((link) => link.id === firstLinkId)?.isHovered;
   return (
     <nav className="navbar">
       <button className="hamburger-btn" type="button">
-        <BsCodeSlash className="hamburger-icon" onClick={openSidebar} />
+        <RxHamburgerMenu className="hamburger-icon" onClick={openSidebar} />
       </button>
 
       <ul className="nav-links">
@@ -26,15 +30,14 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <div className="logo-container">
-        <Link to="/">
-          <img className="logo-navbar" src={logo} alt="Andrea Rivas" />
-        </Link>
-      </div>
-      <p className="phone-container">
-        say
-        <span className="say-hello"> hello</span>
-      </p>
+      {isHomeLinkHovered ? null : (
+        <div className="logo-container">
+          <Link to="/">
+            <img className="logo-navbar" src={logo} alt="Andrea Rivas" />
+          </Link>
+        </div>
+      )}
+      {isHomeLinkHovered ? null : <Hello />}
     </nav>
   );
 };

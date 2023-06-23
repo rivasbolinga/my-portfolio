@@ -1,5 +1,6 @@
 @import './common.scss';
 
+/* Common styles for all screen sizes- */
 .hero-section {
   background-color: rgb(250, 250, 250);
   width: 100%;
@@ -12,13 +13,8 @@
 .hero-center {
   display: flex;
   flex-direction: row;
-  height: 90%;
   justify-content: center;
   align-items: flex-end;
-}
-
-.scroll-right {
-  display: none;
 }
 
 .name-container {
@@ -26,17 +22,21 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
-  border-bottom: 0.1px solid black;
   transform: rotate(0.75turn);
   margin-top: -60px;
 }
 
 .name-container h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-family: $primary-title;
   font-weight: 100;
   margin: 0;
   text-transform: uppercase;
+}
+
+.name-container.contact {
+  font-size: 15px;
+  margin: 0;
 }
 
 .text-container {
@@ -51,165 +51,341 @@
   text-align: right;
 }
 
+@media (max-width: 767px) {
+  .scroll-right {
+    display: none;
+  }
+
+  .hero-center {
+    flex-direction: column;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .text-container h1 {
+    font-size: 70px;
+    font-weight: 100;
+    font-family: $primary-title;
+    text-transform: uppercase;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.442);
+  }
+
+  .sentence {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    h2 {
+      width: 70%;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .hero-section {
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30% 0;
-
-    main {
-      width: 100%;
-    }
+    flex-direction: row;
+    width: 100%;
   }
 
   .hero-center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+    width: 100%;
+  }
+
+  .home-container {
+    display: flex;
+    width: 100%;
+    border-bottom: 0.4px solid black;
+    font-family: $primary-title;
+    height: 25%;
+  }
+
+  .link-container {
+    width: 50px;
+    border-right: 0.5px solid black;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 5px 2px;
+  }
+
+  .link-rotate {
+    transform: rotate(0.75turn);
+    font-family: $primary-title;
+  }
+
+  .text-container {
+    width: calc(100% - 50px);
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 
   .name-container {
     transform: none;
-    width: 100%;
-    gap: 30px;
-    padding: 20% 0 0 0;
+    margin: 0;
+    padding: 0;
+    font-size: 120px;
+    font-weight: 100;
+    text-transform: uppercase;
+    height: 80%;
   }
 
-  .name-container h1 {
-    font-size: 160px;
-    padding-top: 10px;
-    margin: 0;
-    border-top: 0.2px solid;
+  .name-container.about {
+    justify-self: flex-start;
+    text-align: left;
     width: 100%;
+  }
+
+  .name-container.works {
+    text-align: right;
+  }
+
+  .name-container.contact {
+    font-size: 24px;
+    text-align: right;
   }
 
   .scroll-right {
+    position: relative;
+    z-index: 10;
     display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 
     p {
       font-family: $secondary-font-badScript;
       transform: rotate(0.75turn);
-      font-size: 15px;
+      font-size: 17px;
       border-bottom: 0.1px solid;
       text-align: center;
       white-space: nowrap;
+      width: 100%;
     }
   }
 
-  .text-container {
-    align-self: flex-end;
-    width: 500px;
-    text-align: end;
+  /* Animations for the hover effect of the links */
 
-    h2 {
-      font-size: 25px;
-      padding: 20px;
+  .home-container.section-hovered {
+    animation: gradientAnimation 1s linear forwards;
+  }
+
+  .section-hovered-title {
+    font-size: 120px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: $primary-color-grey;
+    text-align: center;
+    width: 100%;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 50% 0;
+    }
+
+    100% {
+      background-position: 100% 0;
+      background-color: black;
     }
   }
 
-  .andrea {
-    text-align: left;
-    padding-left: 120px;
+  /* Adjuctaments of font sizes for every screen size */
+
+  @media (min-height: 600px) {
+    .name-container {
+      font-size: 130px;
+    }
   }
 
-  .rivas {
-    text-align: right;
-    padding-right: 20px;
+  @media (min-height: 700px) {
+    .name-container {
+      font-size: 130px;
+    }
   }
 
-  @media (max-height: 1000px) {
-    .name-container h1 {
-      font-size: 120px;
+  @media (min-height: 800px) {
+    .name-container {
+      font-size: 140px;
+    }
+
+    .name-container.contact {
+      font-size: 27px;
+    }
+  }
+
+  @media (min-height: 900px) {
+    .name-container.contact {
+      font-size: 28px;
+    }
+
+    .section-hovered-title {
+      font-size: 160px;
+    }
+  }
+
+  @media (min-height: 1000px) {
+    .name-container {
+      font-size: 160px;
     }
   }
 }
 
 @media (min-width: 1000px) {
-  .name-container h1 {
-    font-size: 140px;
-    font-weight: 100;
-    z-index: 12;
-    width: 100%;
-  }
-
-  .andrea {
-    padding-left: 14%;
-  }
-
-  .rivas {
-    padding-right: 14%;
-  }
-
   .text-container {
-    text-align: right;
-    width: 600px;
+    padding: 0 5%;
+    align-items: center;
+  }
 
-    h2 {
+  .section-hovered-title {
+    font-size: 160px;
+  }
+
+  @media (min-height: 700px) {
+    .name-container {
+      font-size: 140px;
+    }
+  }
+
+  @media (min-height: 800px) {
+    .name-container {
+      font-size: 150px;
+    }
+
+    .name-container.contact {
       font-size: 30px;
     }
   }
 
-  @media (max-height: 910px) {
+  @media (min-height: 900px) {
     .name-container {
-      padding: 25% 0 0 0;
-      gap: 0;
+      font-size: 160px;
     }
 
-    .name-container h1 {
-      font-size: 100px;
+    .name-container.contact {
+      font-size: 32px;
+    }
+
+    .section-hovered-title {
+      font-size: 160px;
     }
   }
 }
 
 @media (min-width: 1100px) {
-  @media (max-height: 810px) {
-    .name-container h1 {
-      font-size: 120px;
+  .name-container {
+    font-size: 150px;
+  }
+
+  .section-hovered-title {
+    font-size: 160px;
+  }
+
+  .name-container.contact {
+    font-size: 33px;
+  }
+
+  @media (min-height: 700px) {
+    .name-container {
+      font-size: 160px;
     }
   }
-}
 
-@media (min-width: 1200px) {
-  @media (max-height: 810px) {
-    .name-container h1 {
-      font-size: 130px;
+  @media (min-height: 800px) {
+    .name-container {
+      font-size: 170px;
+    }
+
+    .name-container.contact {
+      font-size: 35px;
+    }
+  }
+
+  @media (min-height: 900px) {
+    .name-container {
+      font-size: 180px;
+    }
+
+    .name-container.contact {
+      font-size: 37px;
+    }
+
+    .section-hovered-title {
+      font-size: 180px;
+    }
+  }
+
+  @media (min-height: 1000px) {
+    .name-container {
+      font-size: 190px;
+    }
+
+    .name-container.contact {
+      font-size: 40px;
+    }
+
+    .section-hovered-title {
+      font-size: 190px;
     }
   }
 }
 
 @media (min-width: 1300px) {
-  @media (max-height: 810px) {
-    .name-container {
-      padding: 15% 0 0 0;
-    }
+  .logo-navbar {
+    width: 300px;
+  }
 
-    .name-container h1 {
-      font-size: 140px;
-    }
+  .name-container.about {
+    padding-left: 50px;
+  }
+
+  .name-container.works {
+    padding-right: 50px;
   }
 
   .name-container {
-    gap: 0;
-    padding: 10% 0 0 0;
+    font-size: 150px;
   }
-}
 
-@media (min-width: 1400px) {
-  .name-container h1 {
-    font-size: 160px;
+  .name-container.contact {
+    font-size: 35px;
   }
-}
 
-@media (min-width: 1600px) {
-  .name-container h1 {
-    font-size: 180px;
+  .section-hovered-title {
+    font-size: 150px;
   }
 }
-
-@media (min-width: 1800px) {
-  .name-container h1 {
-    font-size: 200px;
-  }
-}
+//   @media (min-width: 1200px) {
+//     padding: 0 30px;
+//     h1 {
+//       font-size:150px;
+//     }
+//   }
+//   @media (min-width: 1300px) {
+//     padding: 0 40px;
+//     h1 {
+//       font-size:160px;
+//     }
+//   }
+//    @media (min-width: 1400px) {
+//     padding: 0 100px;
+//     h1 {
+//       font-size:170px;
+//     }
+//   }
+// }
