@@ -25,7 +25,7 @@ const links = [
     text: 'contact',
     url: '/contact',
     content:
-      'Welcome to my world of web wizardry, where design meets code and user experience becomes extraordinary – I am your front-end developer extraordinaire!',
+      'Welcome to my world of web wizardry, where design meets code and user experience becomes extraordinary – I am your extraordinaire front-end developer!',
     isHovered: false,
   },
 ];
