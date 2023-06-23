@@ -7,22 +7,22 @@
   z-index: 0;
   top: 0;
   right: 0;
-    animation: wave 1s infinite;
-
+  animation: wave 1s infinite;
 }
 
 @keyframes wave {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(70deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
-
 
 .say-hello-text {
   position: absolute;

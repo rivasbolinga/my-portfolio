@@ -12,8 +12,6 @@ const Navbar = () => {
   const { links } = useContext(HoverContext);
   const firstLinkId = links[0].id;
   const isHomeLinkHovered = links.find((link) => link.id === firstLinkId)?.isHovered;
-  console.log(isHomeLinkHovered);
-
   return (
     <nav className="navbar">
       <button className="hamburger-btn" type="button">

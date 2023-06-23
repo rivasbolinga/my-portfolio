@@ -34,9 +34,7 @@ const Hero = () => {
               </div>
               <div className="text-container">
                 {isHovered ? (
-                  <Link to={url}>
-                    <h1 className="section-hovered-title">{text}</h1>
-                  </Link>
+                  <h1 className="section-hovered-title">{text}</h1>
                 ) : (
                   <h1 className={`name-container ${text}`}>{content}</h1>
                 )}
