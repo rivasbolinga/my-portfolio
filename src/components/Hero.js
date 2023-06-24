@@ -46,7 +46,7 @@ const Hero = () => {
       {areAllLinksNotHovered && (
         <div className="scroll-right">
           <p>scroll right</p>
-          <AiOutlineArrowRight />
+          <AiOutlineArrowRight className="arrow" />
         </div>
       )}
     </section>
