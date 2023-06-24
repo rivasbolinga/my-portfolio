@@ -33,6 +33,8 @@
   height: 1px;
   background-color: $primary-color-black;
   transform:  translate(0px, 0px);
+ 
+  transition: transform 0.5s ease-in-out;
 }
 
 .fa-bar.close-sidebar {
