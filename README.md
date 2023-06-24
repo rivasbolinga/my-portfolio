@@ -1,11 +1,12 @@
 
-![Minimalist Neutral Multi Device Computer Mockup Website Launch Instagram Post (2)](https://github.com/rivasbolinga/my-portfolio/assets/103900838/d6160861-734c-4317-a0ed-4018e57dc273)
+
+<img width="1440" alt="Screenshot 2023-06-24 at 08 27 59" src="https://github.com/rivasbolinga/my-portfolio/assets/103900838/05d6666c-7b08-4153-9da2-3c5937cdcf98">
 
 
-#  📖 My Portfolio - Practice Bootstrap <a name="about-project"></a>
+#  📖 My Portfolio <a name="about-project"></a>
 
 
-A comprehensive web developer portfolio that showcases my expertise in building stunning and functional websites. This is a practice exercise done as part as a collaborative exercise with the goal to learn Bootstrap
+A comprehensive web developer portfolio that showcases my expertise in building stunning and functional websites.
 </div>
 
 
