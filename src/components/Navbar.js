@@ -7,13 +7,13 @@ import Hello from './Hello';
 import { HoverContext } from '../context/hover_context';
 
 const Navbar = () => {
-  const { openSidebar, isSidebarOpen } = useNavigationContext();
+  const { isSidebarOpen, toggleSidebar } = useNavigationContext();
   const { links } = useContext(HoverContext);
   const firstLinkId = links[0].id;
   const isHomeLinkHovered = links.find((link) => link.id === firstLinkId)?.isHovered;
   return (
     <nav className="navbar">
-      <button className="hamburger-btn" type="button" onClick={openSidebar}>
+      <button className="hamburger-btn" type="button" onClick={toggleSidebar}>
         <div className={`fa-bar ${isSidebarOpen ? 'close-sidebar' : ''}`} />
         <div className={`fa-bar ${isSidebarOpen ? 'close-sidebar' : ''}`} />
       </button>

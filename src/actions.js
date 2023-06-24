@@ -4,3 +4,4 @@ export const HOVER_IN_ID = 'HOVER_IN_ID';
 export const HOVER_OUT_ID = 'HOVER_OUT_ID';
 export const HOVER_IN = 'HOVER_IN';
 export const HOVER_OUT = 'HOVER_OUT';
+export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR';

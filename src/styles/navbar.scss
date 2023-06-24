@@ -31,13 +31,20 @@
 .fa-bar {
   width: 45px;
   height: 1px;
-
   background-color: $primary-color-black;
-  transform: translate(0px,0px) ;
+  transform:  translate(0px, 0px);
 }
 
 .fa-bar.close-sidebar {
-  transform: translate(10px,10px)
+  background-color: rgb(255, 253, 245);
+}
+
+.fa-bar.close-sidebar:nth-child(1) {
+  transform: translate(0px, 4px) rotate(-45deg);
+}
+
+.fa-bar.close-sidebar:nth-child(2) {
+  transform: translate(0px, -4px) rotate(45deg);
 }
 
 .nav-links {

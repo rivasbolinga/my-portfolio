@@ -1,5 +1,5 @@
 import React, { useContext, useReducer } from 'react';
-import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from '../actions';
+import { TOGGLE_SIDEBAR, SIDEBAR_CLOSE } from '../actions';
 import reducer from '../reducers/navigation_reducer';
 
 const initialState = {
@@ -11,15 +11,15 @@ const NavigationContext = React.createContext();
 export const NavigationProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const openSidebar = () => {
-    dispatch({ type: SIDEBAR_OPEN });
+  const toggleSidebar = () => {
+    dispatch({ type: TOGGLE_SIDEBAR });
   };
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE });
   };
 
   return (
-    <NavigationContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
+    <NavigationContext.Provider value={{ ...state, toggleSidebar, closeSidebar }}>
       {children}
     </NavigationContext.Provider>
   );
