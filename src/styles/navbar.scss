@@ -27,13 +27,11 @@
   width: 220px;
 }
 
-
 .fa-bar {
   width: 45px;
   height: 1px;
   background-color: $primary-color-black;
   transform:  translate(0px, 0px);
- 
   transition: transform 0.5s ease-in-out;
 }
 
@@ -66,6 +64,11 @@
     justify-content: flex-end;
     gap: 25%;
     border: none;
+    position: absolute;
+  z-index: 10;
+  background-color: rgba(245, 222, 179, 0);
+  top: 0;
+  left: 0;
   }
 
   .hamburger-btn {
