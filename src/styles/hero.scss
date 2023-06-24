@@ -7,7 +7,7 @@
   height: 100vh;
   position: relative;
   z-index: 1;
-  padding: 100px 20px 0 0;
+  padding: 100px 20px 20px 20px;
 }
 
 .hero-center {
@@ -22,8 +22,6 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
-  transform: rotate(0.75turn);
-  margin-top: -60px;
 }
 
 .name-container h1 {
@@ -57,11 +55,46 @@
   }
 
   .hero-center {
-    flex-direction: column;
+    height: 100%;
+    display: flex;
+  }
+
+  .home-container {
+    width: 100%;
+  }
+
+  .home-container:first-child {
+    display: none;
+  }
+
+  .home-container:nth-child(4) {
+    height: 100%;
+    border-bottom: none;
+  }
+
+  .home-container:nth-child(2) {
+    width: 70px;
+  }
+
+  .home-container:nth-child(3) {
+    width: 70px;
   }
 
   .link-container {
     display: none;
+  }
+
+  .name-container.about,
+  .name-container.works {
+    transform: rotate(0.75turn);
+    width: 70px;
+    border-bottom: none;
+  }
+
+  .name-container.contact {
+    border-bottom: none;
+    text-align: right;
+    width: 100%;
   }
 
   .text-container h1 {
@@ -72,14 +105,45 @@
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.442);
   }
 
-  .sentence {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  @media (min-width: 375px) {
+    .text-container h1 {
+      font-size: 80px;
+    }
 
-    h2 {
-      width: 70%;
+    .home-container:nth-child(2) {
+      width: 90px;
+    }
+
+    .home-container:nth-child(3) {
+      width: 90px;
+    }
+
+    .name-container.about,
+    .name-container.works {
+      width: 90px;
+    }
+  }
+
+  @media (min-width: 425px) {
+    .text-container h1 {
+      font-size: 90px;
+    }
+
+    .home-container:nth-child(2) {
+      width: 100px;
+    }
+
+    .home-container:nth-child(3) {
+      width: 100px;
+    }
+
+    .name-container.about,
+    .name-container.works {
+      width: 100px;
+    }
+
+    .name-container.contact {
+      font-size: 18px;
     }
   }
 }
@@ -174,6 +238,7 @@
       white-space: nowrap;
       width: 100%;
     }
+
     .arrow {
       font-size: 30px;
     }
