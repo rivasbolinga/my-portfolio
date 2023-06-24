@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TfiClose } from 'react-icons/tfi';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-small.png';
 import { useNavigationContext } from '../context/navbar_context';
 import links from '../utils/data';
 import '../styles/sidebar.scss';
