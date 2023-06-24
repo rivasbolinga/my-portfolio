@@ -1,26 +1,43 @@
 @import './common.scss';
 
 .navbar {
+  background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 16px;
-  position: absolute;
-  z-index: 10;
-  background-color: rgba(245, 222, 179, 0);
-  top: 0;
-  left: 0;
+  padding: 20px;
   width: 100%;
   border-bottom: 0.2px solid rgba(0, 0, 0, 0.282);
+}
+
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top:40;
+  right: 0;
+  margin-right: 20px;
 }
 
 .logo-navbar {
   width: 220px;
 }
 
-.hamburger-icon {
-  font-size: 30px;
-  color: $primary-color-black;
+
+.fa-bar {
+  width: 45px;
+  height: 1px;
+
+  background-color: $primary-color-black;
+  transform: translate(0px,0px) ;
+}
+
+.fa-bar.close-sidebar {
+  transform: translate(10px,10px)
 }
 
 .nav-links {
@@ -32,7 +49,7 @@
 .phone-container {
   display: none;
 
-  /* Other styles for the container */
+
 }
 
 @media (min-width: 768px) {

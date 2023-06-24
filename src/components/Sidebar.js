@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TfiClose } from 'react-icons/tfi';
+// import { TfiClose } from 'react-icons/tfi';
 import logo from '../assets/logo-small.png';
 import { useNavigationContext } from '../context/navbar_context';
 import links from '../utils/data';
@@ -11,17 +11,16 @@ const Sidebar = () => {
 
   return (
     <aside className={`sidebar ${isSidebarOpen ? 'show-sidebar' : ''}`}>
-      <div className="side-menu__overlay" />
       <div className="sidebar-content">
         <div className="sidebar-header">
           <img src={logo} className="logo-sidebar" alt="coding addict" />
-          <button
+          {/* <button
             type="button"
             className="close-sidebar"
             onClick={closeSidebar}
           >
             <TfiClose />
-          </button>
+          </button> */}
         </div>
         <ul className="sidebar-links">
           {links.map(({ id, text, url }) => (

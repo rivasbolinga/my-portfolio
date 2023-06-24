@@ -19,8 +19,8 @@ import {
 
 const App = () => (
   <Router>
-    <Navbar />
     <Sidebar />
+    <Navbar />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />

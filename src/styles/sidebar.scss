@@ -7,12 +7,11 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 
 
 .sidebar-content {
-  position: relative;
   height: 100%;
   width: 100%;
   background-color: rgba(91, 81, 79, 0.966);
@@ -33,24 +32,7 @@
   display: flex;
 }
 
-.logo-sidebar {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 5;
-}
 
-.close-sidebar {
-  font-size: 20px;
-  color: rgb(225,222,207);
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 
 .sidebar-links  {
   flex: 1;
