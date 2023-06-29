@@ -1,15 +1,25 @@
 @import './common.scss';
 
 .sidebar {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 10;
+  transition: all 1s ease-in-out;
+  transform: translateX(100%);
 }
 
+.sidebar.show-sidebar {
+  opacity: 1;
+  visibility: inherit;
+  transform: translateX(0%);
+
+
+}
 
 .sidebar-content {
   height: 100%;
@@ -27,11 +37,6 @@
   padding: 0 20px;
   border-bottom: 0.4px solid rgb(225,222,207);
 }
-
-.sidebar.show-sidebar {
-  display: flex;
-}
-
 
 
 .sidebar-links  {
@@ -60,8 +65,16 @@
   gap: 3px;
 }
 
-.sidebar-links li {
-  width: 100%;
+
+.sidebar-links a {
+   opacity: 0;
+  transform: translateY(-30px);
+  // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.sidebar-links a:first-child {
+
+  transition: all 0.5s ease-in-out;
 }
 
 .number-menu {
