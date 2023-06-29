@@ -18,9 +18,9 @@
   align-items: center;
   position: absolute;
   z-index: 100;
-  top:40;
+  top: 20px;
   right: 0;
-  margin-right: 20px;
+  margin: 20px;
 }
 
 .logo-navbar {
@@ -31,7 +31,7 @@
   width: 45px;
   height: 1px;
   background-color: $primary-color-black;
-  transform:  translate(0px, 0px);
+  transform: translate(0, 0);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -40,11 +40,11 @@
 }
 
 .fa-bar.close-sidebar:nth-child(1) {
-  transform: translate(0px, 4px) rotate(-45deg);
+  transform: translate(0, 4px) rotate(-45deg);
 }
 
 .fa-bar.close-sidebar:nth-child(2) {
-  transform: translate(0px, -4px) rotate(45deg);
+  transform: translate(0, -4px) rotate(45deg);
 }
 
 .nav-links {
@@ -55,8 +55,6 @@
 
 .phone-container {
   display: none;
-
-
 }
 
 @media (min-width: 768px) {
@@ -65,10 +63,10 @@
     gap: 25%;
     border: none;
     position: absolute;
-  z-index: 10;
-  background-color: rgba(245, 222, 179, 0);
-  top: 0;
-  left: 0;
+    z-index: 10;
+    background-color: rgba(245, 222, 179, 0);
+    top: 0;
+    left: 0;
   }
 
   .hamburger-btn {
