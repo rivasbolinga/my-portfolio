@@ -16,11 +16,13 @@ const Sidebar = () => {
         </div>
         <ul className="sidebar-links">
           {links.map(({ id, text, url }) => (
-            <li key={id}>
+            <li
+              className={`nav-links ${isSidebarOpen ? 'nav-active' : ''}`}
+              key={id}
+            >
               <Link to={url} onClick={closeSidebar}>
                 <span className="number-menu">
                   0
-
                   {id}
                 </span>
                 <span> </span>
