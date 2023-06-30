@@ -1,3 +1,5 @@
+import '../styles/about.scss';
+
 const AboutPage = () => (
   <section>
     <div className="name-header">
