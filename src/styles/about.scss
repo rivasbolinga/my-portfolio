@@ -1,1 +1,30 @@
 @import './common.scss';
+
+.about-section {
+  background-color: rgb(33,33,33);
+  color: rgba(255, 255, 255, 0.754);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  width: 350px;
+}
+
+.name-header {
+  h2 {
+  font-size: 20px;
+  font-family: $primary-font;
+  text-transform: capitalize;
+  }
+}
+
+.name-surname {
+  font-family: $primary-title;
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+}
+

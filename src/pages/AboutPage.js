@@ -2,10 +2,12 @@ import '../styles/about.scss';
 import me from '../assets/me.png';
 
 const AboutPage = () => (
-  <section>
+  <section className="about-section">
     <div className="name-header">
       <h2>Hello world!</h2>
-      <h2>I am Andrea Rivas</h2>
+      <h1>
+        <span className="name-surname">Andrea Rivas</span>
+      </h1>
     </div>
     <div className="image-container">
       <img src={me} className="images" alt="me" />
