@@ -1,7 +1,33 @@
 const AboutPage = () => (
-  <div>
-    About Page
-  </div>
+  <section>
+    <div className="name-header">
+      <h2>Hello world!</h2>
+      <h2>Andrea Rivas</h2>
+    </div>
+    <div className="image-container" />
+    <p>
+      I am currently studying Full-Stack development at Microverse, a remote
+      software development program that uses pair programming and project
+      building to teach software development.
+    </p>
+    <p>
+      I am passionate about software engineering, and also about nature and
+      conservation. So I would love to bring the two together and dedicate my
+      future career to creating software to help combat Climate Change.
+    </p>
+    <p>
+      I have become passionate about web development in the last few years.
+      Thanks to the Microverse program and a lot of hard work, I can now build
+      any kind of websites from scratch.
+      {' '}
+    </p>
+    <p>
+      Immerse myself into the tech industry was probably the best decision I
+      ever took. Programming gives me the possibility to challenge myself every
+      day, solve new problems, and even develop communication and collaboration
+      skills managing a group project.
+    </p>
+  </section>
 );
 
 export default AboutPage;
