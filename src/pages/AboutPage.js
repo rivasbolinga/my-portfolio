@@ -1,12 +1,15 @@
 import '../styles/about.scss';
+import me from '../assets/me.png';
 
 const AboutPage = () => (
   <section>
     <div className="name-header">
       <h2>Hello world!</h2>
-      <h2>Andrea Rivas</h2>
+      <h2>I am Andrea Rivas</h2>
     </div>
-    <div className="image-container" />
+    <div className="image-container">
+      <img src={me} className="images" alt="me" />
+    </div>
     <p>
       I am currently studying Full-Stack development at Microverse, a remote
       software development program that uses pair programming and project
