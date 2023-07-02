@@ -1,10 +1,10 @@
 import '../styles/about.scss';
 import me from '../assets/me.png';
+import { skills } from '../utils/data';
 
 const AboutPage = () => (
   <section className="about-section">
     <div className="name-header">
-      <h2>Hello world!</h2>
       <h1>
         <span className="name-surname">Andrea Rivas</span>
       </h1>
@@ -12,7 +12,8 @@ const AboutPage = () => (
     <div className="image-container">
       <img src={me} className="images" alt="me" />
     </div>
-    <div className="">
+    <div className="about-text-container">
+      <h2>Hello world!</h2>
       <p>
         I am currently studying Full-Stack development at Microverse, a remote
         software development program that uses pair programming and project
@@ -26,7 +27,8 @@ const AboutPage = () => (
       <p>
         I have become passionate about web development in the last few years.
         Thanks to the Microverse program and a lot of hard work, I can now build
-        any kind of websites from scratch.{' '}
+        any kind of websites from scratch.
+        {' '}
       </p>
       <p>
         Immerse myself into the tech industry was probably the best decision I
@@ -35,7 +37,24 @@ const AboutPage = () => (
         collaboration skills managing a group project.
       </p>
     </div>
+    <div className='skills-section'>
+      <h2>Skills</h2>
+      <div className='skills-container'>
+        {skills.map((skill)=> {
+        
+{/* <div className="skill-container">
+  <h3>Languages</h3>
+  <ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>JavaScript</li>
+    <li>Sass</li>
+  </ul>
+</div> */}
+        })}
+      </div>
+    </div>
   </section>
-)
+);
 
 export default AboutPage;
