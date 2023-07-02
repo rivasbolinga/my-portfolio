@@ -31,8 +31,8 @@ const links = [
 ];
 
 export const skills = {
-  'languages': ['html', 'ccs', 'sass', 'javascript'],
+  languages: ['html', 'ccs', 'sass', 'javascript'],
   'frameworks and libraries': ['bootstrap', 'react', 'redux toolkit', 'vitest', 'jest'],
-  'skills': ['Vs Code', 'Postman', 'Git', 'GitHub', 'terminal']
-}
+  skills: ['Vs Code', 'Postman', 'Git', 'GitHub', 'terminal'],
+};
 export default links;

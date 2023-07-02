@@ -37,20 +37,20 @@ const AboutPage = () => (
         collaboration skills managing a group project.
       </p>
     </div>
-    <div className='skills-section'>
+    <div className="skills-section">
       <h2>Skills</h2>
-      <div className='skills-container'>
-        {skills.map((skill)=> {
-        
-{/* <div className="skill-container">
-  <h3>Languages</h3>
-  <ul>
-    <li>Html</li>
-    <li>Css</li>
-    <li>JavaScript</li>
-    <li>Sass</li>
-  </ul>
-</div> */}
+      <div className="skills-container">
+        {Object.entries(skills).map(([category, items]) => {
+          <div className="skill-container" key={category}>
+            <h2>{category}</h2>
+            <ul>
+              {
+            items.map((item) => (
+              <li key={item}>{item}</li>
+            ))
+}
+            </ul>
+          </div>;
         })}
       </div>
     </div>
