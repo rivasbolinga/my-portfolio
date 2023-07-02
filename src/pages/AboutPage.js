@@ -40,7 +40,7 @@ const AboutPage = () => (
     <div className="skills-section">
       <h2>Skills</h2>
       <div className="skills-container">
-        {Object.entries(skills).map(([category, items]) => {
+        {Object.entries(skills).map(([category, items]) => (
           <div className="skill-container" key={category}>
             <h2>{category}</h2>
             <ul>
@@ -50,8 +50,8 @@ const AboutPage = () => (
             ))
 }
             </ul>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
     </div>
   </section>
