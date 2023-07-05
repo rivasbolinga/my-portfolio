@@ -1,3 +1,5 @@
+import { DiJavascript } from 'react-icons/di';
+
 const links = [
   {
     id: '1',
@@ -30,9 +32,14 @@ const links = [
   },
 ];
 
-export const skills = {
-  languages: ['html', 'ccs', 'sass', 'javascript'],
-  'frameworks and libraries': ['bootstrap', 'react', 'redux toolkit', 'vitest', 'jest'],
-  skills: ['Vs Code', 'Postman', 'Git', 'GitHub', 'terminal'],
-};
+export const languages = [
+  {
+    id: 1,
+    name: 'JavaScript',
+    icon: DiJavascript,
+  },
+
+  // { id: 2, skill: 'HTML', icon: HtmlLogo },
+  // { id: 3, skill: 'CSS', icon: CssLogo },
+];
 export default links;

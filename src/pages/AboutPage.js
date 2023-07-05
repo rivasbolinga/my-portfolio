@@ -1,6 +1,6 @@
 import '../styles/about.scss';
 import me from '../assets/me.png';
-import { skills } from '../utils/data';
+import { languages } from '../utils/data';
 
 const AboutPage = () => (
   <section className="about-section">
@@ -40,18 +40,15 @@ const AboutPage = () => (
     <div className="skills-section">
       <h2>Skills</h2>
       <div className="skills-container">
-        {Object.entries(skills).map(([category, items]) => (
-          <div className="skill-container" key={category}>
-            <h2>{category}</h2>
-            <ul>
-              {
-            items.map((item) => (
-              <li key={item}>{item}</li>
-            ))
-}
-            </ul>
-          </div>
-        ))}
+        {languages.map((language) => {
+          const { id, name, icon: Icon } = language;
+          return (
+            <div className="skill-container" key={id}>
+              <h2>{name}</h2>
+              <Icon className="skill-name" alt={name} />
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>
