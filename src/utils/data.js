@@ -3,7 +3,14 @@ import {
   TbBrandHtml5,
   TbBrandCss3,
   TbBrandSass,
+  TbBrandBootstrap,
+  TbBrandReact,
+  TbBrandRedux,
 } from 'react-icons/tb';
+import {
+  SiVitest,
+  SiJest,
+} from 'react-icons/si';
 
 const links = [
   {
@@ -46,4 +53,16 @@ export const languages = {
     { id: 4, name: 'SASS', icon: TbBrandSass },
   ],
 };
+
+export const frameworks = {
+  name: 'Frameworks and libraries',
+  items: [
+    { id: 1, name: 'Bootstrap', icon: TbBrandBootstrap },
+    { id: 2, name: 'React', icon: TbBrandReact },
+    { id: 3, name: 'Redux', icon: TbBrandRedux },
+    { id: 4, name: 'Vitest', icon: SiVitest },
+    { id: 4, name: 'Jest', icon: SiJest },
+  ],
+};
+
 export default links;

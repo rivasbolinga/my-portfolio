@@ -1,6 +1,6 @@
 import '../styles/about.scss';
 import me from '../assets/me.png';
-import { languages } from '../utils/data';
+import { languages, frameworks } from '../utils/data';
 
 const AboutPage = () => (
   <section className="about-section">
@@ -39,18 +39,34 @@ const AboutPage = () => (
     </div>
     <div className="skills-section">
       <h2>Skills</h2>
-      <div className="skills-container">
-        <h3>{languages.name}</h3>
-        <div className="skills-grid">
-          {languages.items.map((item) => {
-            const { id, name, icon: Icon } = item;
-            return (
-              <div className="skill-container" key={id}>
-                <Icon className="skill-icon" />
-                <h4>{name}</h4>
-              </div>
-            );
-          })}
+      <div className="skills-all">
+        <div className="skills-container">
+          <h3>{languages.name}</h3>
+          <div className="skills-grid">
+            {languages.items.map((item) => {
+              const { id, name, icon: Icon } = item;
+              return (
+                <div className="skill-container" key={id}>
+                  <Icon className="skill-icon" />
+                  <h4>{name}</h4>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="skills-container">
+          <h3>{frameworks.name}</h3>
+          <div className="skills-grid">
+            {frameworks.items.map((item) => {
+              const { id, name, icon: Icon } = item;
+              return (
+                <div className="skill-container" key={id}>
+                  <Icon className="skill-icon" />
+                  <h4>{name}</h4>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
