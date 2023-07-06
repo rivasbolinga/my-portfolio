@@ -37,15 +37,13 @@ const links = [
   },
 ];
 
-export const languages = [
-  {
-    id: 1,
-    name: 'JavaScript',
-    icon: TbBrandJavascript,
-  },
-
-  { id: 2, skill: 'HTML', icon: TbBrandHtml5 },
-  { id: 3, skill: 'CSS', icon: TbBrandCss3 },
-  { id: 3, skill: 'SASS', icon: TbBrandSass },
-];
+export const languages = {
+  name: 'Languages',
+  items: [
+    { id: 1, name: 'JavaScript', icon: TbBrandJavascript },
+    { id: 2, name: 'HTML', icon: TbBrandHtml5 },
+    { id: 3, name: 'CSS', icon: TbBrandCss3 },
+    { id: 4, name: 'SASS', icon: TbBrandSass },
+  ],
+};
 export default links;

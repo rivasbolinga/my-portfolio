@@ -40,12 +40,14 @@ const AboutPage = () => (
     <div className="skills-section">
       <h2>Skills</h2>
       <div className="skills-container">
-        {languages.map((language) => {
-          const { id, name, icon: Icon } = language;
+
+        <div>{languages.name}</div>
+        {languages.items.map((item) => {
+          const { id, name, icon: Icon } = item;
           return (
-            <div className="skill-container" key={id}>
-              <h2>{name}</h2>
-              <Icon className="skill-name" alt={name} />
+            <div key={id}>
+              <h3>{name}</h3>
+              <Icon />
             </div>
           );
         })}
