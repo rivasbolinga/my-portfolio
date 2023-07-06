@@ -48,10 +48,48 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px 0;
   
   h2 {
     font-family: $primary-font;
     font-size: 30px;
     font-weight: 100;
   }
+}
+
+.skills-container {
+  border: 1px solid green;
+  padding: 30px;
+  h3 {
+    color: rgb(60,89,60);
+    font-family: $primary-font;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 100;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px
+}
+
+.skill-container {
+  padding: 40px 10px;
+  background-color: white;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(60,89,60);
+  font-family: $primary-font;
+}
+
+.skill-icon {
+  font-size: 60px;
+  color: rgb(60,89,60);
 }
