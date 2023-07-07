@@ -43,7 +43,9 @@ const App = () => {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       ) : (
-        <Route path="/" element={<HomePage />} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       )}
     </Router>
   );
