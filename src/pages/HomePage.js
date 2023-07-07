@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Hero } from '../components/index';
+import { AboutSlide, Hero } from '../components/index';
 import '../styles/home.scss';
 
 const HomePage = () => {
@@ -22,6 +22,7 @@ const HomePage = () => {
     >
       <div className="scroll-content">
         <Hero />
+        <AboutSlide />
       </div>
     </div>
   );

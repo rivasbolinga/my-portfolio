@@ -44,6 +44,10 @@ const links = [
   },
 ];
 
+// const aboutMe = {
+//   headings: [ 'Hello']
+// }
+
 export const languages = {
   name: 'Languages',
   items: [
