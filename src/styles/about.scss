@@ -41,7 +41,7 @@
 }
 
 .skills-section {
-  background-color: #ECE7E1;
+  background-color: rgb(233,233,234);
   width: 100%;
   color: $primary-color-black;
   display: flex;
@@ -107,4 +107,12 @@
 .skill-icon {
   font-size: 60px;
   color: rgb(60,89,60);
+}
+
+.get-my-cv {
+  font-size: 50px;
+  padding: 40px 0;
+  font-family: $primary-title;
+  font-weight: 100;
+  text-transform: uppercase;
 }

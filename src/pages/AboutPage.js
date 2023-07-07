@@ -69,6 +69,7 @@ const AboutPage = () => (
           </div>
         </div>
       </div>
+      <h1 className="get-my-cv">GET MY CV</h1>
     </div>
   </section>
 );
