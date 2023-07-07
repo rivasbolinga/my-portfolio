@@ -9,6 +9,10 @@
   z-index: 1;
   top: 0;
   padding: 20px;
+  min-width: 100%;
+  flex-shrink: 0;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 .hero-center {

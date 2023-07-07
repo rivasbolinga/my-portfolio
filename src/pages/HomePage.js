@@ -21,8 +21,6 @@ const HomePage = () => {
       onWheel={(e) => handleScroll(e)}
     >
       <div className="scroll-content">
-        <Hero className="component" />
-        <Hero />
         <Hero />
       </div>
     </div>
